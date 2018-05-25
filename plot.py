@@ -10,9 +10,9 @@ with open('t.csv','r') as csvfile:
         x.append(float(row[0]))
         y.append(float(row[1]))
 
-plt.plot(x,y, label='Loaded from file!')
-plt.xlabel('x')
-plt.ylabel('y')
-plt.title('Interesting Graph\nCheck it out')
+plt.plot(x,y, label='Voltage Level')
+plt.xlabel('Voltage')
+plt.ylabel('Seconds')
+plt.title('Battery Level')
 plt.legend()
 plt.show()
